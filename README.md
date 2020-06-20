@@ -45,10 +45,10 @@ The 4 USB ports have been setup and configured as HS and SS
 
 ![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_USB.png)
 
-## Post Installation
+## Installation
 1. Update the bios if needed
 2. Open your config.plist and populate the Serial, Board Serial, UUID and MAC address. Always use ProperTree for this!
-3. Copy the folder to your EDI partition 
+3. Copy the folder to your EFI partition 
 4. Install (optional)
 5. Go to System Preferences > Startup Disk and select your startup disk.
 6. Done.
