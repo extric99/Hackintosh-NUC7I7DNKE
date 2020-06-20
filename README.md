@@ -10,7 +10,7 @@
 - RAM: 1x 16GB G.Skill Ripjaws F4-2133C15S-16GRS 2133 MHz, DDR4
 - Storage: m.2 WD GREEN 256GB 
 - dGPU: N/A 
-- WIFI/BT: Broadcom DW1560 (on its way)
+- WIFI/BT: Currently default Intel but Broadcom DW1560 on its way
 
 - SMIBIOS 8,1
 - OpenCore 5.9
@@ -20,6 +20,7 @@
 ## Confirmed working
 - Quick boot into MacOS and rock solid
 - Wake Sleep
+- Built-in Bluetooth
 - Audio
 ![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_Audio.png)
 - Sleep and Wake from mouse or keyboard
@@ -31,7 +32,7 @@
 
 ## Known Issues
 - DRM issues that are inherent to integrated iGPU only
-- Need to replace wifi/bluetooth to get it working
+- Need to replace builtin wifi to get it working
 
 
 ## Bios Setup:
@@ -40,7 +41,7 @@
 
 ## USB Setup:
 
-The 4 USB ports have been setup and configured as HS and SS
+The 4 USB ports have been setup and configured as HS and SS. The bluetooth USB port as internal header. 
 
 
 ![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_USB.png)
