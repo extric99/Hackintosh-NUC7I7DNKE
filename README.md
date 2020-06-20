@@ -22,7 +22,7 @@
 - Wake Sleep
 - Audio
 ![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_Audio.png)
-- Sleep and Wake from bluetooth mouse or keyboard
+- Sleep and Wake from mouse or keyboard
 - Framebuffer for hardware acceleration (encoding/decoding/preview)
 
 ![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_Hackintool_1.png)
@@ -43,18 +43,24 @@
 The 4 USB ports have been setup and configured as HS and SS
 
 
-![](https://github.com/extric99/Hackintosh-Gigabyte-Z390-GAMING-X-i7-9900k-5700XT/blob/master/screenshot/Screenshot_USB.png)
+![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_USB.png)
 
 ## Post Installation
 1. Update the bios if needed
 2. Open your config.plist and populate the Serial, Board Serial, UUID and MAC address. Always use ProperTree for this!
-3. Install (optional)
-4. Go to System Preferences > Startup Disk and select your startup disk.
-5. Done.
+3. Copy the folder to your EDI partition 
+4. Install (optional)
+5. Go to System Preferences > Startup Disk and select your startup disk.
+6. Done.
 
-![](https://github.com/extric99/Hackintosh-Gigabyte-Z390-GAMING-X-i7-9900k-5700XT/blob/master/screenshot/Screenshot_MAC.png)
+![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_MAC.png)
 
-Credits pastrychef
+## Credits
+
+@RehabMan
+@Leesureone for the initial version of the NUC OpenCore 5.9 EFI
+visit [TonyMacx86 NUC7/8 Thread](https://www.tonymacx86.com/threads/guide-intel-nuc7-nuc8-using-clover-uefi-nuc7i7bxx-nuc8i7bxx-etc.261711/) for moreinfo and discussion
+
 
 ## Tips
 - Use [Hackintool](http://headsoft.com.au/download/mac/Hackintool.zip) to validate correct implementation of Framebuffer and USB
