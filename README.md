@@ -60,7 +60,7 @@ The 4 USB ports have been setup and configured as HS and SS. The bluetooth USB p
 
 @RehabMan
 @Leesureone for the initial version of the NUC OpenCore 5.9 EFI
-visit [TonyMacx86 NUC7/8 Thread](https://www.tonymacx86.com/threads/guide-intel-nuc7-nuc8-using-clover-uefi-nuc7i7bxx-nuc8i7bxx-etc.261711/) for moreinfo and discussion
+visit [TonyMacx86 NUC7/8 Thread](https://www.tonymacx86.com/threads/guide-intel-nuc7-nuc8-using-clover-uefi-nuc7i7bxx-nuc8i7bxx-etc.261711/) for more info and discussion
 
 
 ## Tips
