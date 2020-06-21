@@ -32,7 +32,7 @@
 
 ## Known Issues
 - DRM issues that are inherent to integrated iGPU only
-- Need to replace builtin wifi to get it working
+- Need to replace built-in wifi to get it working
 
 
 ## Bios Setup:
@@ -52,7 +52,8 @@ The 4 USB ports have been setup and configured as HS and SS. The bluetooth USB p
 3. Copy the folder to your EFI partition 
 4. Install (optional)
 5. Go to System Preferences > Startup Disk and select your startup disk.
-6. Done.
+6. [Enable Trim](https://www.howtogeek.com/222077/how-to-enable-trim-for-third-party-ssds-on-mac-os-x/)
+7. Done.
 
 ![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_MAC.png)
 
