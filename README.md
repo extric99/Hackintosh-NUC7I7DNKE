@@ -7,10 +7,10 @@
 - NUC: NUC7I7DNKE
 - BIOS: 0069
 - CPU: i7-8650U 
-- RAM: 1x 16GB G.Skill Ripjaws F4-2133C15S-16GRS 2133 MHz, DDR4
+- RAM: 2x 16GB G.Skill Ripjaws F4-2133C15S-16GRS 2133 MHz, DDR4
 - Storage: m.2 WD GREEN 256GB 
 - dGPU: N/A 
-- WIFI/BT: Currently default Intel but Broadcom DW1560 on its way
+- WIFI/BT: Both the default intel module as DW1560 are supported by this built. It is advisable to add replace the default module as the DW1560 will provide feature parity with a real Mac.
 
 - SMIBIOS 8,1
 - OpenCore 5.9
@@ -20,8 +20,9 @@
 ## Confirmed working
 - Quick boot into MacOS and rock solid
 - Wake Sleep
-- Built-in Bluetooth
-- Audio
+- Built-in Bluetooth (with default intel module, no Wifi)
+- Wifi/Bluetooth/Unlock-Approve with Apple Watch (with DW1560)
+- Audio (sleep has been fixed)
 ![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_Audio.png)
 - Sleep and Wake from mouse or keyboard
 - Framebuffer for hardware acceleration (encoding/decoding/preview)
@@ -32,7 +33,7 @@
 
 ## Known Issues
 - DRM issues that are inherent to integrated iGPU only
-- Need to replace built-in wifi to get it working
+- Need to replace built-in wifi module to get wifi working. 
 
 
 ## Bios Setup:
