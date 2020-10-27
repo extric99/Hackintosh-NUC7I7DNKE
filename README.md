@@ -6,10 +6,10 @@
 ## Configuration
 - NUC: NUC7I7DNKE
 - BIOS: 0069
-- CPU: i7-8650U 
+- CPU: i7-8650U
 - RAM: 2x 16GB G.Skill Ripjaws F4-2133C15S-16GRS 2133 MHz, DDR4
-- Storage: m.2 WD GREEN 256GB 
-- dGPU: N/A 
+- Storage: m.2 WD GREEN 256GB
+- dGPU: N/A
 - WIFI/BT: Both the default intel module as DW1560 are supported by this built (use appropriate config.plist). It is advisable to replace the default module as the DW1560 will provide feature parity with a real Mac.
 
 - SMIBIOS 8,1
@@ -33,7 +33,7 @@
 
 ## Known Issues
 - DRM issues that are inherent to integrated iGPU only
-- Need to replace the built-in wifi module to get wifi working. 
+- Need to replace the built-in wifi module to get wifi working.
 
 
 ## Bios Setup:
@@ -42,7 +42,7 @@
 
 ## USB Setup:
 
-The 4 USB ports have been setup and configured as HS and SS. The bluetooth USB port as internal header. 
+The 4 USB ports have been setup and configured as HS and SS. The bluetooth USB port as internal header.
 
 
 ![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_USB.png)
@@ -50,7 +50,7 @@ The 4 USB ports have been setup and configured as HS and SS. The bluetooth USB p
 ## Installation
 1. Update the bios if needed
 2. Open your config.plist and populate the Serial, Board Serial, UUID and MAC address. Always use ProperTree for this!
-3. Copy the folder to your EFI partition 
+3. Copy the folder to your EFI partition
 4. Install (optional)
 5. Go to System Preferences > Startup Disk and select your startup disk.
 6. [Enable Trim](https://www.howtogeek.com/222077/how-to-enable-trim-for-third-party-ssds-on-mac-os-x/)
