@@ -1,7 +1,8 @@
 # Hackintosh NUC7I7DNKE
 
-## Verified working with 10.15.7. --- Should work with BigSur but not yet tested
+## Verified working with 10.15.7 H2 --- Confirmed working with BigSur Beta 10.0.1 Important read below
 ![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_Info.png)
+![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_BigSur.png)
 
 ## Configuration
 - NUC: NUC7I7DNKE
@@ -13,7 +14,7 @@
 - WIFI/BT: Both the default intel module as DW1560 are supported by this built (use appropriate config.plist). It is advisable to replace the default module as the DW1560 will provide feature parity with a real Mac.
 
 - SMIBIOS 8,1
-- OpenCore 6.2
+- OpenCore 0.6.3
 
 ![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_OC.png)
 
@@ -34,7 +35,7 @@
 ## Known Issues
 - DRM issues that are inherent to integrated iGPU only
 - Need to replace the built-in wifi module to get wifi working.
-
+- SATA Support broken in BigSur
 
 ## Bios Setup:
 
@@ -44,12 +45,17 @@
 
 The 4 USB ports have been setup and configured as HS and SS. The bluetooth USB port as internal header.
 
+## BigSur
+
+SATA Support broken due to Apple dropping the AppleIntelPchSeriesAHCI class in AppleAHCIPort.kext. To workaround this, I added Catalina's patched AppleAHCIPort.kext with the MinKernel set to 20.0.0 as recommended by the OpenCore Install Guide. By default this is default to ensure that there are no issues with Catalina. If using the EFI for BigSur enable the kext in the config.plist.
+
 
 ![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_USB.png)
 
 ## Installation
 1. Update the bios if needed
-2. Open your config.plist and populate the Serial, Board Serial, UUID and MAC address. Always use ProperTree for this!
+2. Open your config.plist and populate the Serial, Board Serial, UUID and MAC address.
+Always use ProperTree for this!
 3. Copy the folder to your EFI partition
 4. Install (optional)
 5. Go to System Preferences > Startup Disk and select your startup disk.
