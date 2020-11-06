@@ -456,7 +456,7 @@
 				<key>Enabled</key>
 				<false/>
 				<key>MinKernel</key>
-				<string><20.0.0/string>
+				<string><20.0.0</string>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/CtlnaAHCIPort</string>
 				<key>BundlePath</key>
