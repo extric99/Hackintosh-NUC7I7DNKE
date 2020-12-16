@@ -440,7 +440,6 @@
 				<key>Enabled</key>
 				<false/>
 				<key>MinKernel</key>
-				<string></string>
 				<string>20.0.0</string>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/CtlnaAHCIPort</string>
