@@ -1,19 +1,20 @@
 # Hackintosh NUC7I7DNKE
 
-## Verified working with 10.15.5.
+## Verified working with 10.15.7 H2 and BigSur 11.1 Important read below
 ![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_Info.png)
+![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_BigSur.png)
 
 ## Configuration
 - NUC: NUC7I7DNKE
 - BIOS: 0069
-- CPU: i7-8650U 
+- CPU: i7-8650U
 - RAM: 2x 16GB G.Skill Ripjaws F4-2133C15S-16GRS 2133 MHz, DDR4
-- Storage: m.2 WD GREEN 256GB 
-- dGPU: N/A 
-- WIFI/BT: Both the default intel module as DW1560 are supported by this built. It is advisable to replace the default module as the DW1560 will provide feature parity with a real Mac.
+- Storage: m.2 WD GREEN 256GB
+- dGPU: N/A
+- WIFI/BT: Both the default intel BT module as DW1560 BT/wifi are supported by this built (use appropriate config.plist). It is advisable to replace the default module as the DW1560 will provide feature parity with a real Mac.
 
 - SMIBIOS 8,1
-- OpenCore 5.9
+- OpenCore 0.6.3
 
 ![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_OC.png)
 
@@ -33,8 +34,8 @@
 
 ## Known Issues
 - DRM issues that are inherent to integrated iGPU only
-- Need to replace the built-in wifi module to get wifi working. 
-
+- Built-in wifi does not work. Since I replaced the wifi module I can not test the itwlm kext for intel wifi. If you need the intel wifi to work please add the kext yourself. [Download Intel Wifi kext here](https://github.com/OpenIntelWireless/itlwm)
+- native SATA Support broken in BigSur but workaround can be enabled in the config.plist
 
 ## Bios Setup:
 
@@ -42,15 +43,20 @@
 
 ## USB Setup:
 
-The 4 USB ports have been setup and configured as HS and SS. The bluetooth USB port as internal header. 
+The 4 USB ports have been setup and configured as HS and SS. The bluetooth USB port as internal header.
+
+## BigSur
+
+SATA Support broken due to Apple dropping the AppleIntelPchSeriesAHCI class in AppleAHCIPort.kext. To workaround this, I added Catalina's patched AppleAHCIPort.kext with the MinKernel set to 20.0.0 as recommended by the OpenCore Install Guide. By default this is disabled to ensure that there are no issues with Catalina. If using the EFI for BigSur enable the kext in the config.plist.
 
 
 ![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_USB.png)
 
 ## Installation
 1. Update the bios if needed
-2. Open your config.plist and populate the Serial, Board Serial, UUID and MAC address. Always use ProperTree for this!
-3. Copy the folder to your EFI partition 
+2. Open your config.plist and populate the Serial, Board Serial, UUID and MAC address.
+Always use ProperTree for this!
+3. Copy the folder to your EFI partition
 4. Install (optional)
 5. Go to System Preferences > Startup Disk and select your startup disk.
 6. [Enable Trim](https://www.howtogeek.com/222077/how-to-enable-trim-for-third-party-ssds-on-mac-os-x/)
