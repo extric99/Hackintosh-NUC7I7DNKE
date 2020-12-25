@@ -28,7 +28,7 @@
 - Sleep and Wake from mouse or keyboard
 - Framebuffer for hardware acceleration (encoding/decoding/preview)
 
-![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_Hackintool_1.png)
+![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_Hackintool.png)
 ![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot%20Framebuffer.png)
 
 
