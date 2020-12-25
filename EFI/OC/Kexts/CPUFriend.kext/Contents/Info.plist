@@ -3,11 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-<<<<<<< HEAD
-	<string>18E226</string>
-=======
 	<string>19F101</string>
->>>>>>> e6bca80235e879f6470ea5fe3c84bf29dc7865c3
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -21,11 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-<<<<<<< HEAD
-	<string>1.2.1</string>
-=======
 	<string>1.2.2</string>
->>>>>>> e6bca80235e879f6470ea5fe3c84bf29dc7865c3
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -33,23 +25,6 @@
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-<<<<<<< HEAD
-	<string>1.2.1</string>
-	<key>DTCompiler</key>
-	<string>com.apple.compilers.llvm.clang.1_0</string>
-	<key>DTPlatformBuild</key>
-	<string>10E1001</string>
-	<key>DTPlatformVersion</key>
-	<string>GM</string>
-	<key>DTSDKBuild</key>
-	<string>18E219</string>
-	<key>DTSDKName</key>
-	<string>macosx10.14</string>
-	<key>DTXcode</key>
-	<string>1020</string>
-	<key>DTXcodeBuild</key>
-	<string>10E1001</string>
-=======
 	<string>1.2.2</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
@@ -65,7 +40,6 @@
 	<string>1160</string>
 	<key>DTXcodeBuild</key>
 	<string>11E708</string>
->>>>>>> e6bca80235e879f6470ea5fe3c84bf29dc7865c3
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>CPUFriend</key>
@@ -100,11 +74,8 @@
 			<string>ACPI</string>
 		</dict>
 	</dict>
-<<<<<<< HEAD
-=======
 	<key>LSMinimumSystemVersion</key>
 	<string>10.8</string>
->>>>>>> e6bca80235e879f6470ea5fe3c84bf29dc7865c3
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2017 - 2019 PMheart. All rights reserved.</string>
 	<key>OSBundleCompatibleVersion</key>

@@ -1,6 +1,6 @@
 # Hackintosh NUC7I7DNKE
 
-## Verified working with 10.15.7 H2 and BigSur 11.1 Important read below
+## Verified working with 10.15.7 H2 and BigSur 11.1 Important read below when using Catalina.
 ![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_Info.png)
 ![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_BigSur.png)
 
@@ -14,7 +14,7 @@
 - WIFI/BT: Both the default intel BT module as DW1560 BT/wifi are supported by this built (use appropriate config.plist). It is advisable to replace the default module as the DW1560 will provide feature parity with a real Mac.
 
 - SMIBIOS 8,1
-- OpenCore 0.6.3
+- OpenCore 0.6.4
 
 ![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_OC.png)
 
@@ -47,7 +47,7 @@ The 4 USB ports have been setup and configured as HS and SS. The bluetooth USB p
 
 ## BigSur
 
-SATA Support broken due to Apple dropping the AppleIntelPchSeriesAHCI class in AppleAHCIPort.kext. To workaround this, I added Catalina's patched AppleAHCIPort.kext with the MinKernel set to 20.0.0 as recommended by the OpenCore Install Guide. By default this is disabled to ensure that there are no issues with Catalina. If using the EFI for BigSur enable the kext in the config.plist.
+SATA Support broken due to Apple dropping the AppleIntelPchSeriesAHCI class in AppleAHCIPort.kext. To workaround this, I added Catalina's patched AppleAHCIPort.kext with the MinKernel set to 20.0.0 as recommended by the OpenCore Install Guide. By default this is now enabled. To ensure that there are no issues with Catalina, please remove or disable the kext in the config.plist.
 
 
 ![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_USB.png)
