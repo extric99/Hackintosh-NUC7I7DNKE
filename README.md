@@ -1,6 +1,6 @@
 # Hackintosh NUC7I7DNKE
 
-## Verified working with 10.15.7 H2 and BigSur Beta 10.0.1 Important read below
+## Verified working with 10.15.7 H2 and BigSur 11.1 Important read below
 ![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_Info.png)
 ![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_BigSur.png)
 
