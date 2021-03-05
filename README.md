@@ -1,7 +1,6 @@
 # Hackintosh NUC7I7DNKE
 
-## Verified working with 10.15.7 H2 and BigSur 11.1 Important read below when using Catalina.
-![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_Info.png)
+## Verified working with 10.15.7 H2 and BigSur 11.2.2 Important read below when using Catalina.
 ![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_BigSur.png)
 
 ## Configuration
@@ -14,7 +13,7 @@
 - WIFI/BT: Both the default intel BT module as DW1560 BT/wifi are supported by this built (use appropriate config.plist). It is advisable to replace the default module as the DW1560 will provide feature parity with a real Mac.
 
 - SMIBIOS 8,1
-- OpenCore 0.6.4
+- OpenCore 0.6.7
 
 ![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_OC.png)
 
@@ -23,7 +22,7 @@
 - Wake Sleep
 - Built-in Bluetooth (with default intel module, no Wifi)
 - Wifi/Bluetooth/Unlock-Approve with Apple Watch (with DW1560)/Airdrop/Continuity
-- Audio (sleep has been fixed)
+- Audio (No need to replug the HDMI cable thanks to the fake PCIID)
 ![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_Audio.png)
 - Sleep and Wake from mouse or keyboard
 - Framebuffer for hardware acceleration (encoding/decoding/preview)
@@ -35,7 +34,7 @@
 ## Known Issues
 - DRM issues that are inherent to integrated iGPU only
 - Built-in wifi does not work. Since I replaced the wifi module I can not test the itwlm kext for intel wifi. If you need the intel wifi to work please add the kext yourself. [Download Intel Wifi kext here](https://github.com/OpenIntelWireless/itlwm)
-- native SATA Support broken in BigSur but workaround can be enabled in the config.plist
+- native SATA Support broken in BigSur but workaround is enabled in the config.plist. You can disable it if you have no SATA devices but only NVME.
 
 ## Bios Setup:
 
