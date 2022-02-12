@@ -24,7 +24,7 @@
 - Wake Sleep
 - Built-in Bluetooth 
 - Wifi/Bluetooth/Unlock-Approve with Apple Watch/Airdrop/Continuity
-- Audio (You need to replug the HDMI cable for audio to be recognizd as the fake PCIID kext is not comatible with Monterey)
+- Audio
 ![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_Audio.png)
 - Sleep and Wake from mouse or keyboard (improved from last version)
 - Framebuffer for hardware acceleration (encoding/decoding/preview)
@@ -74,7 +74,7 @@ Always use ProperTree for this!
 ## Credits
 
 @RehabMan
-@Leesureone for the initial version of the NUC OpenCore 5.9 EFI
+@Leesureone for the initial version of the NUC OpenCore 0.7.7 EFI
 visit [TonyMacx86 NUC7/8 Thread](https://www.tonymacx86.com/threads/guide-intel-nuc7-nuc8-using-clover-uefi-nuc7i7bxx-nuc8i7bxx-etc.261711/) for more info and discussion
 
 
