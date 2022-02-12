@@ -24,7 +24,7 @@
 - Wake Sleep
 - Built-in Bluetooth 
 - Wifi/Bluetooth/Unlock-Approve with Apple Watch/Airdrop/Continuity
-- Audio (You need to replug the HDMI cable for audio to be recognizd as the fake PCIID kext is not comatible with Monterey)
+- Audio (You need to replug the HDMI cable for audio to be recognizd as the fake PCIID kext is not compatible with Monterey)
 ![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_Audio.png)
 - Sleep and Wake from mouse or keyboard (improved from last version)
 - Framebuffer for hardware acceleration (encoding/decoding/preview)
