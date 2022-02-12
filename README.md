@@ -1,6 +1,8 @@
 # Hackintosh NUC7I7DNKE
 
-## Verified working with 10.15.7 H2 and BigSur 11.2.2 Important read below when using Catalina.
+## Verified working with Monterey 12.2.1 and BigSur 11.6.3 
+## Important NVME required for Monterey. Read below when using Big Sur or earlier with SATA.
+
 ![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_BigSur.png)
 
 ## Configuration
@@ -8,23 +10,23 @@
 - BIOS: 0069
 - CPU: i7-8650U
 - RAM: 2x 16GB G.Skill Ripjaws F4-2133C15S-16GRS 2133 MHz, DDR4
-- Storage: m.2 WD GREEN 256GB
+- Storage: 1TB NVME WD SN550
 - dGPU: N/A
-- WIFI/BT: Both the default intel BT module as DW1560 BT/wifi are supported by this built (use appropriate config.plist). It is advisable to replace the default module as the DW1560 will provide feature parity with a real Mac.
+- WIFI/BT: Just the DW1560 BT/wifi is supported by this built. It is advisable to replace the default module as the DW1560 will provide feature parity with a real Mac. Due to bluetooth issues, please do your own research for the Intel module.
 
 - SMIBIOS 8,1
-- OpenCore 0.6.7
+- OpenCore 0.7.7
 
 ![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_OC.png)
 
 ## Confirmed working
 - Quick boot into MacOS and rock solid
 - Wake Sleep
-- Built-in Bluetooth (with default intel module, no Wifi)
-- Wifi/Bluetooth/Unlock-Approve with Apple Watch (with DW1560)/Airdrop/Continuity
-- Audio (No need to replug the HDMI cable thanks to the fake PCIID)
+- Built-in Bluetooth 
+- Wifi/Bluetooth/Unlock-Approve with Apple Watch/Airdrop/Continuity
+- Audio (You need to replug the HDMI cable for audio to be recognizd as the fake PCIID kext is not comatible with Monterey)
 ![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_Audio.png)
-- Sleep and Wake from mouse or keyboard
+- Sleep and Wake from mouse or keyboard (improved from last version)
 - Framebuffer for hardware acceleration (encoding/decoding/preview)
 
 ![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_Hackintool.png)
@@ -32,9 +34,9 @@
 
 
 ## Known Issues
-- DRM issues that are inherent to integrated iGPU only
+- DRM issues that are inherent to integrated iGPU only. Chrome seems to allow more DRM content.
 - Built-in wifi does not work. Since I replaced the wifi module I can not test the itwlm kext for intel wifi. If you need the intel wifi to work please add the kext yourself. [Download Intel Wifi kext here](https://github.com/OpenIntelWireless/itlwm)
-- native SATA Support broken in BigSur but workaround is enabled in the config.plist. You can disable it if you have no SATA devices but only NVME.
+- native SATA Support broken in BigSur but workaround is available in the config.plist. You can enable it if you have a SATA boot devices in BigSur. Not this does not work in Monterey, here an NVME is required. For Catalina, please keep also disabled to use native SATA functionality.
 
 ## Bios Setup:
 
@@ -44,10 +46,16 @@
 
 The 4 USB ports have been setup and configured as HS and SS. The bluetooth USB port as internal header.
 
+## Power Consumption
+
+This version has optimized power consumption
+
+
+![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Powergadget.png)
+
 ## BigSur
 
-SATA Support broken due to Apple dropping the AppleIntelPchSeriesAHCI class in AppleAHCIPort.kext. To workaround this, I added Catalina's patched AppleAHCIPort.kext with the MinKernel set to 20.0.0 as recommended by the OpenCore Install Guide. By default this is now enabled. To ensure that there are no issues with Catalina, please remove or disable the kext in the config.plist.
-
+SATA Support broken due to Apple dropping the AppleIntelPchSeriesAHCI class in AppleAHCIPort.kext. To workaround this, I added Catalina's patched AppleAHCIPort.kext with the MinKernel set to 20.0.0 as recommended by the OpenCore Install Guide. By default this is now disabled, please enable as needed. This is not supported for Monterey 
 
 ![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_USB.png)
 
