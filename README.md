@@ -23,7 +23,7 @@
 - Quick boot into MacOS and rock solid
 - Wake Sleep
 - Built-in Bluetooth 
-- Wifi/Bluetooth/Unlock-Approve with Apple Watch/Airdrop/Continuity
+- Wifi/Bluetooth/Unlock-Approve with Apple Watch/Airdrop/Continuity/Universal Control
 - Audio
 ![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_Audio.png)
 - Sleep and Wake from mouse or keyboard (improved from last version)
