@@ -1,6 +1,6 @@
 # Hackintosh NUC7I7DNKE
 
-## Verified working with Monterey 12.3 and BigSur 11.6.3 
+## Verified working with Monterey 12.4 and BigSur 11.6.3 
 ## Important NVME required for Monterey. Read below when using Big Sur or earlier with SATA.
 
 ![](https://github.com/extric99/Hackintosh-NUC7I7DNKE/blob/master/screenshot/Screenshot_BigSur.png)
