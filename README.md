@@ -1,6 +1,6 @@
 # Hackintosh NUC7I7DNKE
 
-## Verified working with Monterey 12.4 and BigSur 11.6.3. Venura BETA EFI can be dowloaded under open issues.
+## Verified working with Monterey 12.4 and BigSur 11.6.3. Ventura BETA EFI can be dowloaded under open issues.
 ## Important NVME required for Monterey. Read below when using Big Sur or earlier with SATA.
 
 
